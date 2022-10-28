@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #b45f4d;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  display: inline-block;
+}
+
+.btn:hover {
+  border: 2px solid #b45f4d;
+  background: #fff;
+  color: #000;
+}
+
+.back-top {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  position: fixed;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* header */
+
+header {
+  background-color: #b36050;
+  padding: 10px 0;
+}
+
+header h3 {
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* navbar */
+
+nav {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background: #f6f4ec;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a,
+.account span {
+  color: #b4604d;
+}
+
+.navbar {
+  list-style-type: none;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 21px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.active {
+  color: black;
+}
+
+.navbar,
+.account {
+  float: left;
+  width: 40%;
+}
+
+.logo {
+  float: left;
+  width: 20%;
+}
+
+.logo {
+  text-align: center;
+}
+
+.account {
+  text-align: right;
+  padding: 24px 0;
+}
+
+.account a {
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.account img {
+  vertical-align: middle;
+}
+
+.account span {
+  font-size: 15px;
+}
+
+/* home */
+
+.home {
+  position: relative;
+}
+
+.home img {
+  width: 100%;
+}
+
+.home button {
+  position: absolute;
+  left: calc(50% - 60px);
+  bottom: 55px;
+  width: 120px;
+}
+
+/* ready */
+
+#ready {
+  background: #a9ae8d;
+  color: #f6f4ec;
+}
+
+#ready {
+  padding: 70px;
+}
+
+#ready p {
+  margin: 15px 0 30px;
+  font-weight: 400;
+  font-size: 33px;
+}
+
+/* products */
+
+#products {
+  background: #f6f4ec;
+}
+
+.products {
+  padding: 0 30px;
+  text-transform: uppercase;
+  color: #b45f4d;
+}
+
+.products-title {
+  text-align: center;
+  padding: 40px 0;
+  text-transform: capitalize;
+  color: #b45f4d;
+}
+
+.card {
+  /* float: left; */
+  display: inline-block;
+  width: 33.333%;
+  padding: 40px;
+}
+
+.card + .card {
+  margin-left: -5px;
+}
+
+.card-inner img {
+  width: 100%;
+}
+
+.card-inner h2 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+#about {
+  background: #F1D3B9;
+  height: 1069px;
+}
+
+.about {
+  position: relative;
+}
+
+.about > * {
+  position: absolute;
+}
+
+.about-left {
+  left: 0;
+  top: 535px;
+  z-index: 1;
+}
+.about-middle {
+  top: 60px;
+  left: 80px;
+}
+
+.about-box {
+  right: 250px;
+  top: 285px;
+  padding: 50px;
+  color: #b45f4d;
+  height: 550px;
+  width: 500px;
+  background: #f8f8f8;
+}
+
+.about-box h2 {
+  font-size: 30px;
+}
+
+.about-box p {
+  font-size: 19px;
+}
